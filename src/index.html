@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracalorie | Meak & Calorie Tracker</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper blue">
+      <div class="container">
+        <a class="brand-logo center">Tracalorie</a>
+
+        <ul class="right">
+          <li><button class="clear-btn btn blue lighten-3">Clear All</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Add Meal / Food Item</span>
+
+        <form class="col">
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" id="item-name">
+              <label for="item-name">Meal</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input type="text" id="item-calories">
+              <label for="item-calories">Calories</label>
+            </div>
+
+            <button class="btn blue darken-3" class="add-btn"><i class="material-icons left">add</i>Add Meal</button>
+            <button class="btn orange" class="update-btn"><i class="material-icons left">edit</i>Update Meal</button>
+            <button class="btn red" class="delete-btn"><i class="material-icons left">clear</i>Remove Meal</button>
+            <button class="btn grey right" class="-btn"><i class="material-icons left">arrow_back</i>Back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <h3 class="center-align">Total Calories: <span id="total-calories">0</span></h3>
+
+    <ul class="collection" id="item-list">
+      <li class="collection-item" id="item-0">
+        <b>Steak Dinner:</b>
+        <em>1200 Calories</em>
+        <a href="#" class="secondary-content"><i class="material-icons">edit</i></a>
+      </li>
+    </ul>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,3 @@
 # Tracalorie
 
-Calorie tracking vanilla JavaScript application.
+Meal and calorie tracking vanilla JavaScript application.
