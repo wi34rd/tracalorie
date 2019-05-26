@@ -5,6 +5,7 @@ class TracalorieView {
         this._addFoodForm = document.getElementById('add-food-form');
         this._foodInput = document.getElementById('food-input');
         this._caloriesInput = document.getElementById('calories-input');
+        this._totalCalories = document.getElementById('total-calories');
         this._itemList = document.getElementById('item-list');
 
         this._addFoodForm.addEventListener('submit', (event) => {
@@ -48,6 +49,10 @@ class TracalorieView {
         `;
 
         this._itemList.appendChild(itemElt);
+    }
+
+    set totalCalories(value) {
+        this._totalCalories.textContent = value;
     }
 }
 

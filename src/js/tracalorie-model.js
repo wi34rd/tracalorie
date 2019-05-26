@@ -28,6 +28,14 @@ class TracalorieModel {
         this._items.push(item);
 
         this.dispatchEvent('itemadd', item);
+
+        this._totalCalories += parseInt(item.calories);
+
+        this.dispatchEvent('totalcalorieschange', this._totalCalories);
+    }
+
+    get totalCalories() {
+        return this._totalCalories;
     }
 }
 
