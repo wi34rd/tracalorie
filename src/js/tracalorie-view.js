@@ -18,8 +18,14 @@ class TracalorieView {
 
             this.dispatchEvent('addfoodformsubmit', item);
 
+
             this._foodInput.value = '';
             this._caloriesInput.value = '';
+
+            // It is necessary that the labels go into placeholders
+            const blurEvent = new FocusEvent('blur');
+            this._foodInput.dispatchEvent(blurEvent);
+            this._caloriesInput.dispatchEvent(blurEvent);
         });
     }
 
